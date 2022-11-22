@@ -1,0 +1,62 @@
+.ticket-body{
+    height: 100vh;
+}
+.ticket-body-content{
+    display: flex;
+    gap: 15px;
+    input{
+        outline: none;
+        width: 50%;
+        height: 40px;
+        padding: 0 15px;
+        border-radius: 4px;
+        border: 1px solid rgba(17, 17, 17, 0.3);
+    }
+    button{
+        border: none;
+        color: white;
+        background-color: #0A75FF;
+        font-weight: 600;
+        padding: 5px 25px;
+        border-radius:  30px;
+        font-size: 14px;
+    }
+}
+.tiket-border{
+    margin: 40px 0;
+    display: flex;
+    .tiket-border-left{
+       border-bottom: 1px solid #BAC0C2;
+       padding-left: 5rem;
+    }
+    .tiket-border-container{
+        padding: 0 10px;
+        border-bottom: 1px solid #BAC0C2;
+        cursor: pointer;
+        &.active{
+            border-top: 1px solid #BAC0C2;
+            border-left: 1px solid #BAC0C2;
+            border-right: 1px solid #BAC0C2;
+            border-bottom: none;
+            color: #0A75FF;
+            font-weight: 600;
+        }
+    }
+    .tiket-border-right{
+        padding: 0 10px;
+        border-bottom: 1px solid #BAC0C2;
+        cursor: pointer;
+        &.active{
+            border-top: 1px solid #BAC0C2;
+            border-left: 1px solid #BAC0C2;
+            border-right: 1px solid #BAC0C2;
+            border-bottom: none;
+            color: #0A75FF;
+            font-weight: 600;
+        }
+    }
+
+}
+.tiket-cart{
+    text-align: center;
+}

@@ -1,0 +1,264 @@
+.Manager-body {
+    background-color: #111111;
+    height          : 100vh;
+    color           : white;
+    padding-top     : 60px;
+    overflow        : hidden;
+
+    .Manager-body-manager {
+        padding: 0 30px;
+        display: flex;
+
+        .manager-manager-body {
+            margin-top      : 20px;
+            width           : 15%;
+            background-color: white;
+            color           : black;
+            text-align      : center;
+            height          : 500px;
+
+            .manager-manager-item {
+                padding   : 5px 10px;
+                cursor    : pointer;
+                list-style: none;
+                margin    : 5px;
+                display         : flex;
+                align-items: center;
+                span{
+                    width :70% ;
+                }
+
+
+                &.active {
+                    background-color: gray;
+
+                }
+
+                &.active:hover {
+                    opacity: 1 !important;
+                }
+
+                .Manager-body-icon {
+                    font-size   : 24px;
+                    margin-right: 5px;
+                    width: 30%;
+
+                    &.Manager-body-icon2 {
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            .manager-manager-item:hover {
+                opacity: 0.6;
+            }
+
+        }
+
+        .Manager-body-container {
+            padding: 30px;
+            width  : 75%;
+
+            .manager-web {
+                width           : 100%;
+                background-color: white;
+                color           : black;
+                padding         : 10px;
+
+                h5,
+                p {
+                    margin: 30px 0;
+                }
+
+                .manager-web-content {
+                    text-align: center;
+
+                    span {
+                        padding         : 5px 10px;
+                        background-color: blue;
+                        margin          : 5px;
+                        border-radius   : 10px;
+                        color           : white;
+                        font-weight     : 600;
+                    }
+
+                    .manager-web-content-span1 {
+                        background-color: #35CEBE;
+                    }
+
+                    .manager-web-content-span2 {
+                        background-color: #FF6A00;
+                    }
+
+                    .manager-web-content-span3 {
+                        background-color: #236B2A;
+                    }
+
+                    .manager-web-content-span4 {
+                        background-color: #284D5A;
+                    }
+                }
+
+                .manager-web-container {
+                    display: flex;
+
+                    span {
+                        width: 50%;
+                    }
+
+                    .manager-web-container-col {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .manager-web-content-margin {
+                margin     : 50px 0 10px;
+                font-weight: bold;
+            }
+        }
+
+        .manager-user-body {
+            margin-top: 30px;
+
+            .manager-user-icons {
+                font-size    : 25px;
+                float        : right;
+                margin-bottom: 10px;
+
+                .manager-user-icons-icon {
+                    cursor: pointer;
+                }
+
+                .manager-user-icons-icon:hover {
+                    opacity: 0.6;
+                }
+
+                span {
+                    font-size: 29px;
+                }
+            }
+
+            table {
+                width          : 100%;
+                text-align     : center;
+                border-collapse: initial !important;
+
+                background-color: white !important;
+
+                th {
+                    background-color: #14181e !important;
+                    color           : white;
+                    padding         : 10px;
+
+
+                }
+
+                tr {
+                    padding         : 10px 0;
+                    background-color: #4a8b63 !important;
+                    color           : white;
+
+                    .manager-user-actions {
+                        margin          : 5px;
+                        font-size       : 20px;
+                        background-color: #61dafb !important;
+                        padding         : 5px 10px;
+                        cursor          : pointer;
+                        border-radius   : 5px;
+                    }
+
+                    .manager-user-actions:hover {
+                        opacity: 0.6;
+                    }
+
+                    img {
+                        height: 40px;
+                    }
+
+                }
+
+            }
+        }
+
+        .manager-film-body {
+            margin-top      : 30px;
+            background-color: white;
+            color           : black;
+
+            .manager-film-icons {
+                font-size    : 25px;
+                float        : right;
+                margin-bottom: 10px;
+
+                .manager-film-icons-icon {
+                    cursor: pointer;
+                }
+
+                .manager-film-icons-icon:hover {
+                    opacity: 0.6;
+                }
+
+                span {
+                    font-size: 29px;
+                }
+            }
+
+            table {
+                width          : 100%;
+                text-align     : center;
+                border-collapse: initial !important;
+
+                background-color: white !important;
+
+                th {
+                    background-color: #507CD1 !important;
+                    color           : white;
+                    padding         : 10px;
+
+
+                }
+
+                tr {
+                    padding         : 10px 0;
+                    background-color: #EFF3FB !important;
+                    color           : black;
+
+                    .manager-film-actions {
+                        margin          : 5px;
+                        font-size       : 20px;
+                        background-color: #61dafb !important;
+                        padding         : 5px 10px;
+                        cursor          : pointer;
+                        border-radius   : 5px;
+                    }
+
+                    .manager-film-actions:hover {
+                        opacity: 0.6;
+                    }
+
+                    img {
+                        height: 40px;
+                    }
+
+                    span {
+                        color     : rgb(22, 126, 236);
+                        transition: all 0.2;
+                        cursor    : pointer;
+                    }
+
+                    span:hover {
+                        opacity: 0.6;
+                    }
+
+                    .manager-film-actions-icon {
+                        padding  : 5px px;
+                        font-size: 20px;
+                        margin   : 3px;
+                    }
+                }
+
+            }
+        }
+    }
+}

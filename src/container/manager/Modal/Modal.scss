@@ -1,0 +1,178 @@
+.modal-dialog {
+    max-width: 700px !important;
+}
+.modal-title{
+    width: 100%;
+    .modal-header-cancel{
+        float: right;
+        padding: 0 5px ;
+        cursor: pointer;
+    }
+}
+.modal-film{
+    display:flex ;
+    width: 100%;
+    gap: 5px;
+    margin-top: 10px;
+    .modal-film-item{
+        width: 50%;
+        label{
+            margin-right: 10px;
+            width: 28%;
+        }
+        input{
+            outline:none;
+            width: 65%;
+        }
+        select{
+            outline: none;
+        }
+    }
+    .modal-film-item-content{
+        width: 100%;
+        display: flex ;
+        textarea{
+            width: 80%;
+        }
+        label{
+            margin-right: 10px;
+            width: 14%;
+        }
+        .modal-film-item-input{
+            width: 20%;
+            margin-right: 10px;
+        }
+        input{
+            width: 70%;
+            outline: none;
+        }
+        .preview-image{
+            width:50px ;
+            height: 50px;
+        }
+        .preview-image2{
+            width:50px ;
+            height: 50px;
+        }
+        .preview-image2{
+            width:50px ;
+            height: 50px;
+        }
+       
+    }
+    .modal-film-item-content1{
+        width: 100%;
+        display:flex ;
+        .label-upload1{
+            margin-right: 10px;
+            width: 23%;
+
+        }
+         .label-upload{
+            margin-right: 10px;
+            width: 30%;
+
+        }
+        .label-upload2{
+            margin-right: 10px;
+            width: 35%;
+        }
+        input{
+            width: 70%;
+            outline: none;
+        }
+        .preview-image{
+            width:50px ;
+            height: 50px;
+        }
+        .preview-image2{
+            width:50px ;
+            height: 50px;
+        }
+    }
+    .modal-film-item-content2{
+        width: 100%;
+        .label-upload1{
+            margin-right: 10px;
+            width: 23%;
+
+        }
+         .label-upload{
+            margin-right: 10px;
+            width: 30%;
+
+        }
+        .label-upload2{
+            margin-right: 10px;
+            width: 35%;
+        }
+        input{
+            width: 70%;
+            outline: none;
+        }
+        .preview-image{
+            width:50px ;
+            height: 50px;
+        }
+        .preview-image2{
+            width:50px ;
+            height: 50px;
+        }
+    }
+}
+.modal-film-btn{
+    border: none;
+    background-color: #5ecdda ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    margin-left: 15px;
+    &.btn-modal-cancle{
+        background-color: red;
+    }
+}
+.modal-User{
+    display:flex ;
+    width: 100%;
+    gap: 5px;
+    margin-top: 10px;
+    .modal-User-item{
+        width: 50%;
+        label{
+            margin-right: 10px;
+            width: 25%;
+        }
+        input{
+            outline:none;
+        }
+        select{
+            outline: none;
+        }
+    }
+    .modal-User-item-content{
+        width: 100%;
+        label{
+            margin-right: 10px;
+            width: 13%;
+        }
+        input{
+            width: 70%;
+            outline: none;
+        }
+        .preview-image{
+            width:50px ;
+            height: 50px;
+        }
+    }
+}
+.modal-user-btn{
+    border: none;
+    background-color: #5ecdda ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    margin-left: 15px;
+    &.btn-modal-cancle{
+        background-color: red;
+    }
+}

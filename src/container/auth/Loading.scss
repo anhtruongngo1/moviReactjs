@@ -1,0 +1,55 @@
+.loading-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    img{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    }
+}
+.modal-forgot{
+    input{
+        width: 70%;
+        outline: none;
+        padding: 0 10px;
+    }
+}
+.modal-forgot-notify{
+    color: red;
+    padding: 0 20%;
+    float: right;
+    margin-top: 20px;
+}
+.forgot-password{
+    position: relative;
+    img{
+        width: 100%;
+        height: 100vh;
+    }
+    .forgot-infor{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        .forgot-item{
+            label , input {
+                width: 100%;
+                outline: none;
+                margin: 10px 0;
+            }
+            label{
+                font-weight: bold;
+            }
+            button{
+                float: right;
+                margin-top: 20%;
+            }
+        }
+    }
+}

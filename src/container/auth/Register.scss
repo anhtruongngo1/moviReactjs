@@ -1,0 +1,220 @@
+@media(min-width: 768px)  { 
+.register-body{
+    height: 100vh;
+    
+
+    .register-body-screen{
+        background-image: url('../../assets/background/banner.jpg') ;
+        display: flex;
+        color: white ;
+        text-align: center;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        overflow: hidden;
+        .register-block{
+            width: 70%;
+            display: flex;
+           margin: auto ;
+            .register-content{
+                width: 70%;
+                height: 555px;
+                background-image: url('../../assets/background/content.jpg')
+            }
+            .register-container{
+                background: #000232;
+                width: 30%;
+                padding: 15px 30px 15px;
+                margin: auto;
+                border-radius:5px ;
+                .login-errmess{
+                    color: white ;
+                    margin: 0;
+                }
+        
+                .register-img{
+                    width: 100px;
+                    height: 100px;
+                    background-image: url("../../assets/logo/logo1.jpg") ;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    border-radius:50%;
+                    margin: 0 auto;
+                }
+                p {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 14px;
+                }
+                .register-input{
+                    display: flex;
+                    font-size: 20px;
+                    height: 40px;
+                    border-bottom: 1px solid #b689b0;
+                    margin: 15px 0;
+                    .register-input-icon{
+                        align-items: center;
+                        display: flex
+                    }
+                    input{
+                        margin-left: 10px;
+                        width: 100%;
+                        outline: none;
+                        border: none ;
+                        background: transparent;
+                        color: white;
+                        font-size: 17px;
+                    }
+                }
+    
+                .btn-register{
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 18px;
+                    background: #b689b0 ;
+                    color: white;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+                .register-login-icon{
+                    font-size: 35px;
+                    margin: 10px;
+                    display: flex;
+                    align-content: center;
+                    justify-content: space-evenly;
+                    .register-login-icon-face{
+                        background-image: url('../../assets/background/facebook.png');
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 37px;
+                        height: 34px;
+                    }
+                    .register-login-icon-google{
+                        background-image: url('../../assets/background/google.jpg');
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 40px;
+                    }
+                }
+           
+            }
+        }
+    }
+    
+}
+}
+@media(max-width: 767px) {
+    .register-body{
+        height: 100vh;
+        
+    
+        .register-body-screen{
+            background-image: url('../../assets/background/banner.jpg') ;
+            display: flex;
+            color: white ;
+            text-align: center;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100%;
+            overflow: hidden;
+            .register-block{
+                width: 70%;
+                display: flex;
+               margin: auto ;
+                .register-content{
+                    width: 0%;
+                    height: 555px;
+                    background-image: url('../../assets/background/content.jpg')
+                }
+                .register-container{
+                    background: #000232;
+                    width: 100%;
+                    padding: 15px 30px 15px;
+                    margin: auto;
+                    border-radius:5px ;
+                    .login-errmess{
+                        color: white ;
+                        margin: 0;
+                    }
+            
+                    .register-img{
+                        width: 100px;
+                        height: 100px;
+                        background-image: url("../../assets/logo/logo1.jpg") ;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        border-radius:50%;
+                        margin: 0 auto;
+                    }
+                    p {
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 14px;
+                    }
+                    .register-input{
+                        display: flex;
+                        font-size: 20px;
+                        height: 40px;
+                        border-bottom: 1px solid #b689b0;
+                        margin: 15px 0;
+                        .register-input-icon{
+                            align-items: center;
+                            display: flex
+                        }
+                        input{
+                            margin-left: 10px;
+                            width: 100%;
+                            outline: none;
+                            border: none ;
+                            background: transparent;
+                            color: white;
+                            font-size: 17px;
+                        }
+                    }
+        
+                    .btn-register{
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 18px;
+                        background: #b689b0 ;
+                        color: white;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                    }
+                    .register-login-icon{
+                        font-size: 35px;
+                        margin: 10px;
+                        display: flex;
+                        align-content: center;
+                        justify-content: space-evenly;
+                        .register-login-icon-face{
+                            background-image: url('../../assets/background/facebook.png');
+                            border-radius: 50%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 37px;
+                            height: 34px;
+                        }
+                        .register-login-icon-google{
+                            background-image: url('../../assets/background/google.jpg');
+                            border-radius: 50%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 40px;
+                        }
+                    }
+               
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,574 @@
+@media(min-width: 768px)  {
+    .homepage-all{
+        background-color: #000000;
+        .manager-film-detail2 {
+            overflow        : hidden;
+            background-color: #111111;
+            position        : relative;
+            top             : 50px;
+            min-height          : calc(100vh - 53px);
+        
+            .film-detail-background2 {
+                width  : 100%;
+                display: flex;
+                height          : 100vh;
+        
+                .backgound-bottom2 {
+                    position  : absolute;
+                    background: linear-gradient(to top, #0e0e0e, rgba(0, 0, 0, 0.6) 48%, transparent);
+                    width     : 100%;
+                    height    : 20%;
+                    bottom    : 0;
+                    left      : 0;
+                    z-index   : 4;
+                }
+        
+                .backgound-left2 {
+                    flex              : 0 0 25%;
+                    max-width         : 0%;
+                    padding-left      : 4%;
+                    -webkit-box-sizing: border-box;
+                    box-sizing        : border-box;
+                    z-index           : 3;
+                    background        : #000;
+                    position          : relative;
+                }
+        
+                .backgound-left2::before {
+                    margin-left     : -1px;
+                    content         : "";
+                    position        : absolute;
+                    z-index         : 10;
+                    background-image: linear-gradient(to right, #000, transparent);
+                    top             : 0;
+                    bottom          : 0;
+                    left            : 100%;
+                    width           : 30vw;
+                }
+        
+                .backgound-right2 {
+                    max-width         : 100% !important;
+                    -webkit-box-sizing: border-box;
+                    box-sizing        : border-box;
+                    position          : relative;
+                    flex: 100% !important;
+        
+                    img {
+                        width: 100%;
+                    }
+        
+                    .backgound-right-movie {
+                        position: absolute;
+                        left    : 0;
+                        top     : 0;
+                        width   : 100%;
+                        height  : 100%;
+                    }
+                }
+            }
+        
+            .film-detail-content {
+                position: absolute;
+                width   : 100%;
+                height  : 100%;
+                z-index : 7;
+                top     : 10px;
+        
+                .detail-content-title {
+                    padding  : 5rem 4% 1rem;
+                    max-width: 50vw;
+        
+                    img {
+                        height          : 10vw;
+                        max-width       : 100%;
+                        transition      : 0.3s all;
+                        transform-origin: 0 0;
+                    }
+                }
+        
+                .detail-content-overview {
+                    padding: 0 0 0 4%;
+                    width  : 37vw;
+                    color  : white;
+        
+                    .overview-list-detail {
+                        display          : flex;
+                        font-size        : 16px;
+                        line-height      : 22px;
+                        -webkit-box-align: center;
+                        -ms-flex-align   : center;
+                        align-items      : center;
+                        flex-wrap        : wrap;
+                        padding          : 10px 0;
+                        gap              : 15px;
+        
+                        .overview-list-item {
+                            padding: 5px 0;
+                        }
+        
+                        .overview-list-item-active {
+                            background   : #262626;
+                            padding      : 3px 0;
+                            border-radius: 4px;
+                        }
+        
+                        .overview-list-item-active2 {
+                            background   : #EBEBEB;
+                            padding      : 0 3px;
+                            border-radius: 4px;
+                            color        : black;
+                            font-weight  : bold;
+                        }
+                    }
+        
+                    .overview-list-description {
+                        font-size: 24px;
+                        font-weight: 600;
+                        span{
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: #929798;
+                            margin-left: 10px;
+                            cursor: pointer;
+                            .overview-list-description-icon{
+                                font-size: 30px;
+                            }
+                        }
+                        span:hover{
+                            color: white;
+                        }
+                    }
+        
+                    .overviw-list-type {
+                        padding: 15px 0;
+        
+        
+                        .overviw-list-type-actor {
+                            display: flex;
+        
+                            span {
+                                font-size    : 14px;
+                                color        : rgba(255, 255, 255, 0.78);
+                                padding-right: 15px;
+                                width        : 85px;
+                                display      : inline-block;
+                                font-weight  : 600;
+                            }
+                        }
+        
+                        .overviw-list-type-text-actor {
+                            position: relative;
+                            z-index : 1;
+                            color   : rgba(255, 255, 255, 0.6);
+                            overflow: hidden;
+                        }
+                    }
+        
+                    .film-detail-btn {
+                        display: flex;
+        
+                        .film-detail-btn-link {
+                            padding      : 5px 20px;
+                            border-radius: 30px;
+                            margin       : 10px;
+        
+                            .film-detail-btn-icon {
+                                font-size: 23px;
+                                margin   : 5px;
+                            }
+        
+                            span {
+                                font-size  : 15px;
+                                font-weight: bold;
+                            }
+                        }
+        
+                        .film-detail-btn-link:hover {
+                            opacity: 0.7;
+                        }
+        
+                        .film-detail-btn-active {
+                            background: #404446;
+                            color     : white;
+                        }
+                    }
+                }
+            }
+        
+            .film-detail-center-menu {
+                position        : absolute;
+                bottom          : 10%;
+                z-index         : 7;
+                 right : 5% !important;
+                background-color: transparent;
+        
+                ul {
+                    display: flex;
+                    gap: 10px;
+        
+                    .film-detail-center-icon{
+                        padding:10px;
+                        background-color: transparent;
+                        font-size: 23px;
+                        list-style: none;
+                        border-radius: 50%;
+                        border: 1px solid;
+                        border-color: white;
+                        display: flex;
+                        cursor: pointer;
+                        .film-detail-center-icon-link{
+                            background-color: white;
+                            border-radius: 50%;
+                            border: 1px solid;
+                            border-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .homepage-container{
+            width: 100%;
+            background-color: white ;
+            color: black;
+           // padding: 0 5% ;
+            background-color: #000000;
+            color: white ;
+            h3{
+                margin-left: 5%;
+            }
+            .homepage-all-no{
+                height:50px;
+            }
+            .homepage-menu{
+                img{
+                    width:270px;
+                    border-radius:10px;
+                }
+            }
+            .slick-slider{
+                margin: 0 0 0 5% ;
+            }
+            .slick-slide{
+               // margin: 0 25px;
+              // margin-right: 25px;
+            }
+            .slick-prev {
+                background-color: red !important;
+        
+                left   : 0 !important;
+                z-index: 2;
+                height : 40px !important;
+                width  : 40px !important;
+                top: 80px;
+                background: transparent !important;
+            }
+            .slick-next:before {
+                font-size: 35px;
+                line-height: 1;
+                opacity: .75;
+                color: wheat;
+            }
+            .slick-prev:before {
+                font-size: 35px;
+                line-height: 1;
+                opacity: .75;
+                color: wheat;
+               
+            }
+        
+            .slick-next {
+                color: wheat !important;
+                right           : 25px !important;
+                height          : 40px !important;
+                width           : 40px !important;
+                top: 80px;
+                background: transparent !important;
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    .homepage-all{
+        background-color: #000000;
+        .manager-film-detail2 {
+            background-color: #111111;
+            position        : relative;
+            top             : 50px;
+        
+            .film-detail-background2 {
+                width  : 100%;
+                display: flex;
+        
+                .backgound-bottom2 {
+                    position  : absolute;
+                    background: linear-gradient(to top, #0e0e0e, rgba(0, 0, 0, 0.6) 48%, transparent);
+                    width     : 100%;
+                    height    : 20%;
+                    bottom    : 0;
+                    left      : 0;
+                    z-index   : 4;
+                }
+        
+                .backgound-left2 {
+                    flex              : 0 0 25%;
+                    max-width         : 0%;
+                    padding-left      : 4%;
+                    -webkit-box-sizing: border-box;
+                    box-sizing        : border-box;
+                    z-index           : 3;
+                    background        : #000;
+                    position          : relative;
+                }
+        
+                .backgound-left2::before {
+                    margin-left     : -1px;
+                    content         : "";
+                    position        : absolute;
+                    z-index         : 10;
+                    background-image: linear-gradient(to right, #000, transparent);
+                    top             : 0;
+                    bottom          : 0;
+                    left            : 100%;
+                    width           : 30vw;
+                }
+        
+                .backgound-right2 {
+                    max-width         : 100% !important;
+                    -webkit-box-sizing: border-box;
+                    box-sizing        : border-box;
+                    position          : relative;
+                    flex: 100% !important;
+        
+                    img {
+                        width: 100%;
+                    }
+        
+                    .backgound-right-movie {
+                        position: absolute;
+                        left    : 0;
+                        top     : 0;
+                        width   : 100%;
+                        height  : 100%;
+                    }
+                }
+            }
+        
+            .film-detail-content {
+                position: absolute;
+                width   : 100%;
+                height  : 100%;
+                z-index : 7;
+                top     : 35px;
+        
+                .detail-content-title {
+                    padding  : 5rem 4% 1rem;
+                    max-width: 50vw;
+        
+                    img {
+                        height          : 10vw;
+                        max-width       : 100%;
+                        transition      : 0.3s all;
+                        transform-origin: 0 0;
+                    }
+                }
+        
+                .detail-content-overview {
+                    color  : white;
+        
+                    .overview-list-detail {
+                        display          : flex;
+                        font-size        : 16px;
+                        line-height      : 22px;
+                        -webkit-box-align: center;
+                        -ms-flex-align   : center;
+                        align-items      : center;
+                        flex-wrap        : wrap;
+                        padding          : 10px 0;
+                        gap              : 15px;
+        
+                        .overview-list-item {
+                            padding: 5px 0;
+                        }
+        
+                        .overview-list-item-active {
+                            background   : #262626;
+                            padding      : 3px 0;
+                            border-radius: 4px;
+                        }
+        
+                        .overview-list-item-active2 {
+                            background   : #EBEBEB;
+                            padding      : 0 3px;
+                            border-radius: 4px;
+                            color        : black;
+                            font-weight  : bold;
+                        }
+                    }
+        
+                    .overview-list-description {
+
+                        display: none;
+
+                    }
+        
+                    .overviw-list-type {
+                        padding: 15px 0;
+        
+        
+                        .overviw-list-type-actor {
+                            display: flex;
+        
+                            span {
+                                font-size    : 14px;
+                                color        : rgba(255, 255, 255, 0.78);
+                                padding-right: 15px;
+                                width        : 85px;
+                                display      : inline-block;
+                                font-weight  : 600;
+                            }
+                        }
+        
+                        .overviw-list-type-text-actor {
+                            position: relative;
+                            z-index : 1;
+                            color   : rgba(255, 255, 255, 0.6);
+                            overflow: hidden;
+                        }
+                    }
+        
+                    .film-detail-btn {
+                        display: flex;
+        
+                        .film-detail-btn-link {
+                            padding      : 5px 20px;
+                            border-radius: 30px;
+                            margin       : 10px;
+        
+                            .film-detail-btn-icon {
+                                font-size: 23px;
+                                margin   : 5px;
+                            }
+        
+                            span {
+                                font-size  : 15px;
+                                font-weight: bold;
+                            }
+                        }
+        
+                        .film-detail-btn-link:hover {
+                            opacity: 0.7;
+                        }
+        
+                        .film-detail-btn-active {
+                            background: #404446;
+                            color     : white;
+                        }
+                    }
+                }
+            }
+        
+            .film-detail-center-menu {
+                position        : absolute;
+                bottom          : 10%;
+                z-index         : 7;
+                 right : 5% !important;
+                background-color: transparent;
+        
+                ul {
+                    display: flex;
+                    gap: 10px;
+        
+                    .film-detail-center-icon{
+                        padding:10px;
+                        background-color: transparent;
+                        font-size: 23px;
+                        list-style: none;
+                        border-radius: 50%;
+                        border: 1px solid;
+                        border-color: white;
+                        display: flex;
+                        cursor: pointer;
+                        .film-detail-center-icon-link{
+                            background-color: white;
+                            border-radius: 50%;
+                            border: 1px solid;
+                            border-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .homepage-container{
+            width: 100%;
+            background-color: white ;
+            color: black;
+           // padding: 0 5% ;
+            background-color: #000000;
+            color: white ;
+            margin-top: 20px;
+            h3{
+                margin-left: 5%;
+            }
+            .homepage-all-no{
+                height:50px;
+            }
+            .homepage-menu{
+                img{
+                    width:270px;
+                    border-radius:10px;
+                }
+            }
+            .slick-slider{
+                margin: 0 0 0 5% ;
+            }
+            .slick-slide{
+               // margin: 0 25px;
+              // margin-right: 25px;
+            }
+            .slick-prev {
+                background-color: red !important;
+        
+                left   : 0 !important;
+                z-index: 2;
+                height : 40px !important;
+                width  : 40px !important;
+                top: 80px;
+                background: transparent !important;
+            }
+            .slick-next:before {
+                font-size: 35px;
+                line-height: 1;
+                opacity: .75;
+                color: wheat;
+            }
+            .slick-prev:before {
+                font-size: 35px;
+                line-height: 1;
+                opacity: .75;
+                color: wheat;
+               
+            }
+        
+            .slick-next {
+                color: wheat !important;
+                right           : 25px !important;
+                height          : 40px !important;
+                width           : 40px !important;
+                top: 80px;
+                background: transparent !important;
+            }
+        }
+    }
+}
+
+.homepage-loading{
+    position: absolute;
+    height:100vh ;
+    background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   z-index: 10;
+   
+}
